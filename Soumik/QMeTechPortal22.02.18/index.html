@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+  
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="css/stylelogin.css">
+  <script src="js/user.js"></script>
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div id="logload" style="display: none;
+    position: fixed;
+    z-index: 999;
+    height: 5em;
+    width: 5em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;">
+        <img src="images/Loader.gif" />
+    </div>
+  <div class="cotn_principal">
+<div class="cont_centrar">
+
+				<div class="content logoholder">
+                    <img src="images/logo.png" alt=""/>
+                </div>
+
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+      <div class="col_md_login">
+<div class="cont_ba_opcitiy">
+        
+        <h2> QMePortal</h2>  
+   
+  <button class="btn_login" onclick="cambiar_login()">Login </button>
+  </div>
+  </div>
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>Organization Portal </h2>
+
+  
+  
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">Login </button>
+</div>
+  </div>
+       </div>
+
+    
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       
+	   </div>
+       
+    </div>
+	<div class="cont_forms" >
+    <div class="cont_img_back_">
+        
+	</div>
+	
+ <div class="cont_form_login">
+	<a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+	<h2>LOGIN</h2>
+ <input type="text" placeholder="Username.." class="QMeusrName" autofocus/>
+<input type="password" placeholder="Password.." class="QMeusrPass"/>
+<div id="errLogin" style="color:red;"></div>
+<button class="btn_login"  onClick="signinQmePortal()">LOGIN</button>
+  </div>
+  
+   <div class="cont_form_sign_up">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+     <h2>LOGIN</h2>
+     <input class="assoID" type="text" name="assoname" placeholder="Organization ID.." autofocus>
+     <input class="adminUID" type="text" name="username" placeholder="Admin UID..">
+     <input class="usrPass" type="password" name="pass" placeholder="Admin password..">
+     <div id="errLogin" style="color:red;"></div>
+<button class="btn_sign_up" onclick="signin()">LOGIN</button>
+
+  </div>
+
+    </div>
+    
+  </div>
+ </div>
+</div>
+  
+  
+
+    <script  src="js/loginindex.js"></script>
+
+
+
+
+</body>
+
+</html>
